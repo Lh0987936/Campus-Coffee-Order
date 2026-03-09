@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    android:background="?attr/colorSurface"
+    android:padding="24dp">
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bomb_logo"
+        app:tint="?attr/colorPrimary"
+        android:contentDescription="A cartoon Bomb stencil"/>
+    <TextView
+        android:id="@+id/orderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Logo"
+        android:layout_centerHorizontal="true"
+        android:text="Your Order has been placed!"
+        android:paddingLeft="5dp"
+        style="@style/Title"/>
+    <TextView
+        android:id="@+id/nameTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderTitle"
+        android:layout_alignEnd="@id/oatTag"
+        android:text="Name:   "
+        android:paddingLeft="10dp"
+        style="@style/OrderReturn"/>
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nameTag"
+        android:layout_below="@id/orderTitle"
+        android:text="Testa"
+        android:paddingLeft="10dp"
+        style="@style/OrderReturn"/>
+    <TextView
+        android:id="@+id/orderTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTag"
+        android:layout_alignEnd="@id/oatTag"
+        android:text="Order:   "
+        android:paddingLeft="10dp"
+        style="@style/OrderReturn"/>
+    <TextView
+        android:id="@+id/orderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/orderTag"
+        android:layout_below="@id/nameText"
+        android:text="Testb"
+        android:paddingLeft="10dp"
+        style="@style/OrderReturn"/>
+    <TextView
+        android:id="@+id/oatTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderTag"
+        android:text="OatMilk:   "
+        android:paddingLeft="10dp"
+        style="@style/OrderReturn"/>
+    <TextView
+        android:id="@+id/oatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/oatTag"
+        android:layout_below="@id/orderText"
+        android:paddingLeft="10dp"
+        android:text="Tesc"
+        style="@style/OrderReturn"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/cofee_cup"
+        android:contentDescription="A black and white Coffee Cup"/>
+</RelativeLayout>

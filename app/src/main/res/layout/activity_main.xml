@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to da Bomb.Coffee"
+        android:textAlignment="center"
+        style="@style/Title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bomb_logo"
+        app:tint="?attr/colorPrimary"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter the name for your Order"/>
+
+    <TextView
+        android:id="@+id/nameError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F54927"
+        android:visibility="gone"
+        android:text = "You must enter a name!"/>
+
+    <RadioGroup
+        android:id="@+id/drinkChoiceRGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/latteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latte"/>
+        <RadioButton
+            android:id="@+id/bobaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boba Tea"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/radioError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F54927"
+        android:visibility="gone"
+        android:text = "You Must Select an Order!"/>
+
+    <CheckBox
+        android:id="@+id/oatCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oat Milk"/>
+
+    <Button
+        android:id="@+id/submitOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Order"/>
+
+</LinearLayout>
