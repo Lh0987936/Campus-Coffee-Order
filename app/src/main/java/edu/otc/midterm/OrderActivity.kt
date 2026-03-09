@@ -2,6 +2,7 @@ package edu.otc.midterm
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,11 +22,16 @@ class OrderActivity : AppCompatActivity() {
         val nameEnter = findViewById<TextView>(R.id.nameText)
         val orderEnter = findViewById<TextView>(R.id.orderText)
         val oatEnter = findViewById<TextView>(R.id.oatText)
+        val backButton = findViewById<Button>(R.id.backButton)
 
         nameEnter.text = intent.getStringExtra("name")
         orderEnter.text = intent.getStringExtra("order")
         oatEnter.text = intent.getStringExtra("oat")
         Log.d("OnCreate", "ITS ALIVEEEEE")
+
+        backButton.setOnClickListener { v->
+            finish()
+        }
     }
     override fun onStart() {
         super.onStart()

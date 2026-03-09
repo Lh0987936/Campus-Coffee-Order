@@ -36,15 +36,18 @@ class MainActivity : AppCompatActivity() {
 
         btnSubmit.setOnClickListener  { v->
             var error = false
+            //pulls the checked ID from radOrder.
             val orderbtn = findViewById<RadioButton>(radOrder.checkedRadioButtonId)
             val order = orderbtn?.text
+            //checking if our user entered their name.
             if (editName.text.toString() == "") {
-                Log.d("Click","Name Not Entered")
+                Log.d("NameError","Name Not Entered")
                 error = true
                 nameError.visibility = View.VISIBLE
             }
+            //checking if our user clicked a radio button
             if (order == null) {
-                Log.d("Click","Order Not Entered")
+                Log.d("RadioError","Order Not Entered")
                 error = true
                 radioError.visibility = View.VISIBLE
             }
@@ -53,12 +56,12 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this@MainActivity, OrderActivity::class.java)
                 intent.putExtra("name", name)
                 intent.putExtra("order", order)
-                if(checkOat.isChecked) {intent.putExtra("oat", "Yes")}
+                //Checking for if we Use Oat milk. done here since it's a bool and more compact than the others.
+                if (checkOat.isChecked) {intent.putExtra("oat", "Yes")}
                 else {intent.putExtra("oat","No")}
 
                 startActivity(intent)
-        }
-//            Log.d("Click",editName.text.toString())
+            }
         }
         // ^ send in the vals we set up so we can feed them to OrderActivity with intent.putextra(?)
     }
