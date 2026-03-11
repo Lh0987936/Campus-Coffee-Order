@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/bomb_logo"
         app:tint="?attr/colorPrimary"
-        android:contentDescription="A cartoon Bomb stencil"/>
+        android:contentDescription="@string/bomb_logo"/>
 
     <TextView
         android:id="@+id/orderTitle"
