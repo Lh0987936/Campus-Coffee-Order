@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">Midterm</string>
+    <string name="name">Name:</string>
+    <string name="CupDesc">A black and white Coffee Cup</string>
+    <string name="Backbtn">Back</string>
+    <string name="oat_milk_Input">Oat Milk:</string>
+    <string name="orderText">Order:</string>
+    <string name="OrderMsg">Your Order has been placed!</string>
+    <string name="BombLogo">A cartoon Bomb stencil Logo</string>
     <string name="Greeting">Welcome to da Bomb.Coffee</string>
     <string name="EditHint">Enter the name for your Order</string>
-    <string name="bomb_logo">bomb_logo</string>
+    <string name="nameError">You must enter a name!</string>
+    <string name="latte">Latte</string>
+    <string name="boba">Boba Tea</string>
+    <string name="radioError">You Must Select an Order!</string>
+    <string name="oat_milk_toggle">Oat Milk</string>
+    <string name="SubmitBtn">Submit Order</string>
 </resources>

@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/bomb_logo"
         app:tint="?attr/colorPrimary"
-        android:contentDescription="@string/bomb_logo"
+        android:contentDescription="@string/BombLogo"
         android:layout_gravity="center"/>
 
     <EditText
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:background="#F54927"
         android:visibility="gone"
-        android:text = "You must enter a name!"/>
+        android:text = "@string/nameError"/>
 
     <RadioGroup
         android:id="@+id/drinkChoiceRGroup"
@@ -47,12 +47,12 @@
             android:id="@+id/latteButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Latte"/>
+            android:text="@string/latte"/>
         <RadioButton
             android:id="@+id/bobaButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Boba Tea"/>
+            android:text="@string/boba"/>
     </RadioGroup>
 
     <TextView
@@ -61,18 +61,18 @@
         android:layout_height="wrap_content"
         android:background="#F54927"
         android:visibility="gone"
-        android:text = "You Must Select an Order!"/>
+        android:text = "@string/radioError"/>
 
     <CheckBox
         android:id="@+id/oatCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Oat Milk"/>
+        android:text="@string/oat_milk_toggle"/>
 
     <Button
         android:id="@+id/submitOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit Order"/>
+        android:text="@string/SubmitBtn"/>
 
 </LinearLayout>

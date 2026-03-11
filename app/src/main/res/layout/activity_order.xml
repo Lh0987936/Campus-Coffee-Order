@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/bomb_logo"
         app:tint="?attr/colorPrimary"
-        android:contentDescription="@string/bomb_logo"/>
+        android:contentDescription="@string/BombLogo"/>
 
     <TextView
         android:id="@+id/orderTitle"
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/Logo"
         android:layout_centerHorizontal="true"
-        android:text="Your Order has been placed!"
-        android:paddingLeft="5dp"
+        android:text="@string/OrderMsg"
+        android:paddingStart="5dp"
         style="@style/Title"/>
 
     <TextView
@@ -34,18 +34,18 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/orderTitle"
         android:layout_alignEnd="@id/oatTag"
-        android:text="Name:   "
-        android:paddingLeft="10dp"
+        android:text="@string/name"
+        android:paddingStart="10dp"
         style="@style/OrderReturn"/>
 
     <TextView
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/nameTag"
+        android:layout_toEndOf="@id/nameTag"
         android:layout_below="@id/orderTitle"
         android:text=""
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
         style="@style/OrderReturn"/>
 
     <TextView
@@ -54,18 +54,18 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/nameTag"
         android:layout_alignEnd="@id/oatTag"
-        android:text="Order:   "
-        android:paddingLeft="10dp"
+        android:text="@string/orderText"
+        android:paddingStart="10dp"
         style="@style/OrderReturn"/>
 
     <TextView
         android:id="@+id/orderText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/orderTag"
+        android:layout_toEndOf="@id/orderTag"
         android:layout_below="@id/nameText"
         android:text=""
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
         style="@style/OrderReturn"/>
 
     <TextView
@@ -73,17 +73,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/orderTag"
-        android:text="Oat Milk:   "
-        android:paddingLeft="10dp"
+        android:text="@string/oat_milk_Input"
+        android:paddingStart="10dp"
         style="@style/OrderReturn"/>
 
     <TextView
         android:id="@+id/oatText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/oatTag"
+        android:layout_toEndOf="@id/oatTag"
         android:layout_below="@id/orderText"
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
         android:text=""
         style="@style/OrderReturn"/>
 
@@ -92,14 +92,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/cofee_cup"
-        android:contentDescription="A black and white Coffee Cup"/>
+        android:contentDescription="@string/CupDesc"/>
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/orderTitle"
-        android:layout_alignParentRight="true"
-        android:text="Back"/>
+        android:layout_alignParentEnd="true"
+        android:text="@string/Backbtn"/>
 
 </RelativeLayout>

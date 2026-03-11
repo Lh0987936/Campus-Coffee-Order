@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() {
                 radioError.visibility = View.VISIBLE
             }
             if (!error) {
+                nameError.visibility = View.GONE
+                radioError.visibility = View.GONE
                 val name = editName.text.toString()
                 val intent = Intent(this@MainActivity, OrderActivity::class.java)
                 intent.putExtra("name", name)
@@ -63,6 +65,5 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-        // ^ send in the vals we set up so we can feed them to OrderActivity with intent.putextra(?)
     }
 }
